@@ -1,9 +1,10 @@
 import React from 'react';
+import ddcLogoWhite from '@assets/img_ddc_logo_white_a700.svg';
+import linkedinIcon from '@assets/img_icon_linkedin.svg';
+import facebookIcon from '@assets/img_icon_facebook.svg';
+import instagramIcon from '@assets/img_icon_instagram.svg';
 
-export default function Footer() {
-  return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+export default function Footer() { return ( <footer className="bg-gray-900 text-white"> <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <img 
@@ -29,13 +30,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white">
-                <img src="/images/img_icon_linkedin.svg" alt="LinkedIn" className="h-6 w-6" />
+                <img src={linkedinIcon} alt="LinkedIn" className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white">
-                <img src="/images/img_icon_facebook.svg" alt="Facebook" className="h-6 w-6" />
+                <img src={facebookIcon} alt="Facebook" className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white">
-                <img src="/images/img_icon_instagram.svg" alt="Instagram" className="h-6 w-6" />
+                <img src={instagramIcon} alt="Instagram" className="h-6 w-6" />
               </a>
             </div>
           </div>
