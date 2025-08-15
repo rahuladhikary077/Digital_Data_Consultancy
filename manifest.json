@@ -1,0 +1,25 @@
+{
+  "short_name": "DDC",
+  "name": "Digital Data Consultancy",
+  "icons": [
+    {
+      "src": "http://127.0.0.1:5180/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "http://127.0.0.1:5180/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "http://127.0.0.1:5180/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#646cff",
+  "background_color": "#ffffff"
+}

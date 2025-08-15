@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================= */
+/* Base Resets & Root Variables */
+/* ============================= */
+
+:root {
+  /* Add any custom CSS variables here */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans bg-background-light text-text-primary;
+    margin: 0;
+    padding: 0;
+  }
+}
