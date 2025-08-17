@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
-const SearchView = ({ 
-  placeholder = "Search", 
-  leftImage, 
-  rightImage, 
-  value = "", 
-  onChange, 
+const SearchView = ({
+  placeholder = "Search",
+  leftImage,
+  value = "",
+  onChange,
   onSubmit,
   className = "",
-  ...props 
+  ...props
 }) => {
   const handleSubmit = (e) => {
     e?.preventDefault();
@@ -19,11 +19,11 @@ const SearchView = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`flex items-center gap-[10px] ${className}`} {...props}>
+    <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row items-center gap-2 sm:gap-[10px] w-full ${className}`} {...props}>
       {leftImage && (
-        <img 
-          src={leftImage?.src} 
-          alt="search icon" 
+        <img
+          src={leftImage?.src}
+          alt="search icon"
           className={`w-[${leftImage?.width}px] h-[${leftImage?.height}px]`}
         />
       )}
@@ -32,15 +32,9 @@ const SearchView = ({
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange && onChange(e?.target?.value)}
-        className="bg-transparent border-none outline-none text-searchview-1 placeholder-searchview-1 flex-1 text-sm font-normal leading-[21px] font-poppins"
+        className="bg-transparent border-none outline-none text-searchview-1 placeholder-searchview-1 flex-1 text-sm font-normal leading-[21px] font-poppins w-full"
       />
-      {rightImage && (
-        <img 
-          src={rightImage?.src} 
-          alt="icon" 
-          className={`w-[${rightImage?.width}px] h-[${rightImage?.height}px]`}
-        />
-      )}
+      <Button type="submit" variant="primary" size="small" className="w-full sm:w-auto">Search</Button>
     </form>
   );
 };
@@ -48,11 +42,6 @@ const SearchView = ({
 SearchView.propTypes = {
   placeholder: PropTypes?.string,
   leftImage: PropTypes?.shape({
-    src: PropTypes?.string?.isRequired,
-    width: PropTypes?.number,
-    height: PropTypes?.number
-  }),
-  rightImage: PropTypes?.shape({
     src: PropTypes?.string?.isRequired,
     width: PropTypes?.number,
     height: PropTypes?.number

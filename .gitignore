@@ -24,3 +24,5 @@ jest-test-results.json
 # Optional: if using IDEs
 .vscode/
 .idea/
+
+.vercel

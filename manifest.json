@@ -3,17 +3,17 @@
   "name": "Digital Data Consultancy",
   "icons": [
     {
-      "src": "http://127.0.0.1:5180/apple-touch-icon.png",
+      "src": "/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "http://127.0.0.1:5180/favicon.ico",
+      "src": "/favicon.ico",
       "sizes": "16x16 32x32 48x48",
       "type": "image/x-icon"
     },
     {
-      "src": "http://127.0.0.1:5180/vite.svg",
+      "src": "/vite.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }

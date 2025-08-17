@@ -2,9 +2,8 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: "class", // Use class-based toggling
   theme: {
     extend: {
       screens: {
@@ -14,42 +13,6 @@ export default {
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
-      },
-      colors: {
-        // Custom brand colors - adjust as needed
-        blue: {
-          500: "#646cff", // Replaces global-4 (example)
-        },
-        gray: {
-          100: "#f5f5f5",
-          900: "#111827",
-        },
-        // Optional: custom theme-friendly naming
-        background: {
-          light: "#ffffff",
-          dark: "#1f2937", // gray-800ish
-        },
-        text: {
-          primary: "#111827", // gray-900
-          secondary: "#6b7280", // gray-500
-        },
-      },
-      fontFamily: {
-        sans: ["Poppins", "Roboto", "sans-serif"],
-      },
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem',
-        },
-      },
-      spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
       },
       fontSize: {
         'xs': ['0.75rem', { lineHeight: '1rem' }],
@@ -61,29 +24,30 @@ export default {
         '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
         '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
         '5xl': ['3rem', { lineHeight: '1' }],
+        '6xl': ['3.75rem', { lineHeight: '1' }],
+        '7xl': ['4.5rem', { lineHeight: '1' }],
+        '8xl': ['6rem', { lineHeight: '1' }],
+        '9xl': ['8rem', { lineHeight: '1' }],
       },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.5s ease-out',
-        'scale-in': 'scaleIn 0.3s ease-out',
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
       },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        scaleIn: {
-          '0%': { transform: 'scale(0.9)', opacity: '0' },
-          '100%': { transform: 'scale(1)', opacity: '1' },
-        },
+      maxWidth: {
+        '8xl': '88rem',
+        '9xl': '96rem',
+      },
+      minHeight: {
+        'screen-25': '25vh',
+        'screen-50': '50vh',
+        'screen-75': '75vh',
+      },
+      backgroundImage: {
+        'hero-mobile': "url('/images/img_banner_gradients.png')",
+        'hero-desktop': "url('/images/img_banner_gradients.png')",
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 }

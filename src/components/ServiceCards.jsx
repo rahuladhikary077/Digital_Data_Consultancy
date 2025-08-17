@@ -2,27 +2,44 @@
 import React from 'react';
 
 const services = [
-  { title: 'Custom Development', description: 'Bespoke solutions tailored to your needs.' },
-  { title: 'UI/UX Design',        description: 'Intuitive interfaces that delight users.' },
-  { title: 'Cloud Hosting',       description: 'Reliable, scalable cloud infrastructure.' },
-  { title: 'Analytics & SEO',     description: 'Data-driven growth and visibility.' },
+  {
+    title: 'Data Engineering',
+    description: 'We build robust and scalable data pipelines to handle all your data needs.',
+    icon: '/images/img_engineering.svg',
+  },
+  {
+    title: 'Data Governance',
+    description: 'Ensure data quality, security, and compliance with our expert guidance.',
+    icon: '/images/img_governance.svg',
+  },
+  {
+    title: 'Business Intelligence',
+    description: 'Turn your data into actionable insights with our advanced analytics solutions.',
+    icon: '/images/img_vector.svg',
+  },
 ];
 
 export default function ServiceCards() {
   return (
-    <section className="bg-gray-50">
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 text-center mb-8">
-          Our Services
+    <section className="bg-white py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
+          Combining Data into Business Success
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((svc, idx) => (
+        <p className="text-center text-gray-600 mb-12">We offer a range of services to help you achieve your data-driven goals.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+              className="bg-gray-50 rounded-lg shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300"
             >
-              <h3 className="text-xl font-medium mb-2 text-gray-900">{svc.title}</h3>
-              <p className="text-gray-600">{svc.description}</p>
+              <img
+                src={service.icon}
+                alt={`${service.title} icon`}
+                className="h-20 w-20 mx-auto mb-6"
+              />
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">{service.title}</h3>
+              <p className="text-gray-600">{service.description}</p>
             </div>
           ))}
         </div>
