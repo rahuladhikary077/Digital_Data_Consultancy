@@ -18,6 +18,6 @@ export default defineConfig({
     host: true,
     port: 5173,
   },
-  // 👇 IMPORTANT: Change this to your repo name
-  base: '/Digital_Data_Consultancy/',
+  // ✅ FIXED: Use '/' for Vercel deployment
+  base: '/',
 })
