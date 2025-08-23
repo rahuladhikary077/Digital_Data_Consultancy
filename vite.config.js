@@ -19,5 +19,5 @@ export default defineConfig({
     port: 5173,
   },
   // 👇 IMPORTANT: Change this to your repo name
-  base: '/Digital_Data_Consultancy/',
+  base: '/digital_data_consultancy/',
 })

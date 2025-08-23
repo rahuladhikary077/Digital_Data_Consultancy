@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://RahulAdhiikari.github.io/digital_data_consultancy",
+  "homepage": "https://rahuladhikary077.github.io/digital_data_consultancy",
   "scripts": {
     "dev": "vite",
     "start": "vite",
@@ -12,6 +12,7 @@
     "serve": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx,css,md,json}\"",
     "predeploy": "npm run build",
+    "postbuild": "powershell -Command \"Copy-Item -Path dist/index.html -Destination dist/404.html\"",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
