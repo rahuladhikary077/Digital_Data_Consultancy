@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://rahuladhikary077.github.io/digital_data_consultancy",
+  "homepage": "https://rahuladhikary077.github.io/Digital_Data_Consultancy",
   "scripts": {
     "dev": "vite",
     "start": "vite",
@@ -19,7 +19,7 @@
     "@analytics/google-analytics": "^1.1.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.23.12",
-    "lucide-react": "^0.539.0",
+    "lucide-react": "^0.541.0",
     "posthog-js": "^1.260.1",
     "prop-types": "^15.8.1",
     "react": "^19.1.1",
