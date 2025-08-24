@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MobileNavDrawer = ({ menuItems, isOpen, onClose }) => {
   return (
     <div
       className={`fixed inset-0 bg-black bg-opacity-50 z-50 transform transition-transform duration-300 ${
-        isOpen ? "translate-x-0" : "-translate-x-full"
+        isOpen ? 'translate-x-0' : '-translate-x-full'
       }`}
     >
       <div className="bg-[#02101F] w-64 h-full p-6 flex flex-col">

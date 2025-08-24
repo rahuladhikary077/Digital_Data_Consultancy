@@ -31,7 +31,7 @@ const allInsights = [
     title: 'Security First',
     summary: 'Building robust security frameworks for enterprise applications.',
     image: '/images/img_placeholder_image_1.png',
-  }
+  },
 ];
 
 export default function InsightsSection() {
@@ -44,18 +44,14 @@ export default function InsightsSection() {
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-8 sm:mb-12">
           Our Insights
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {displayedInsights.map((item, idx) => (
             <div
               key={idx}
               className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
             >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-48 sm:h-56 object-cover"
-              />
+              <img src={item.image} alt={item.title} className="w-full h-48 sm:h-56 object-cover" />
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900">
                   {item.title}

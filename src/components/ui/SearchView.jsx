@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const SearchView = ({
-  placeholder = "Search",
+  placeholder = 'Search',
   leftImage,
-  value = "",
+  value = '',
   onChange,
   onSubmit,
-  className = "",
+  className = '',
   ...props
 }) => {
   const handleSubmit = (e) => {
@@ -19,7 +19,11 @@ const SearchView = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row items-center gap-2 sm:gap-[10px] w-full ${className}`} {...props}>
+    <form
+      onSubmit={handleSubmit}
+      className={`flex flex-col sm:flex-row items-center gap-2 sm:gap-[10px] w-full ${className}`}
+      {...props}
+    >
       {leftImage && (
         <img
           src={leftImage?.src}
@@ -34,7 +38,9 @@ const SearchView = ({
         onChange={(e) => onChange && onChange(e?.target?.value)}
         className="bg-transparent border-none outline-none text-searchview-1 placeholder-searchview-1 flex-1 text-sm font-normal leading-[21px] font-poppins w-full"
       />
-      <Button type="submit" variant="primary" size="small" className="w-full sm:w-auto">Search</Button>
+      <Button type="submit" variant="primary" size="small" className="w-full sm:w-auto">
+        Search
+      </Button>
     </form>
   );
 };
@@ -44,12 +50,12 @@ SearchView.propTypes = {
   leftImage: PropTypes?.shape({
     src: PropTypes?.string?.isRequired,
     width: PropTypes?.number,
-    height: PropTypes?.number
+    height: PropTypes?.number,
   }),
   value: PropTypes?.string,
   onChange: PropTypes?.func,
   onSubmit: PropTypes?.func,
-  className: PropTypes?.string
+  className: PropTypes?.string,
 };
 
 export default SearchView;

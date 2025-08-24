@@ -40,28 +40,56 @@
 /* ============================= */
 @layer utilities {
   /* Background Colors */
-  .bg-global-1 { background-color: var(--global-bg-1); }
-  .bg-global-2 { background-color: var(--global-bg-2); }
-  .bg-global-3 { background-color: var(--global-bg-3); }
-  .bg-global-4 { background-color: var(--global-bg-4); }
-  .bg-global-5 { background-color: var(--global-bg-5); }
-  .bg-global-6 { background-color: var(--global-bg-6); }
+  .bg-global-1 {
+    background-color: var(--global-bg-1);
+  }
+  .bg-global-2 {
+    background-color: var(--global-bg-2);
+  }
+  .bg-global-3 {
+    background-color: var(--global-bg-3);
+  }
+  .bg-global-4 {
+    background-color: var(--global-bg-4);
+  }
+  .bg-global-5 {
+    background-color: var(--global-bg-5);
+  }
+  .bg-global-6 {
+    background-color: var(--global-bg-6);
+  }
 
   /* Text Colors */
-  .text-global-1 { color: var(--global-text-1); }
-  .text-global-2 { color: var(--global-text-2); }
-  .text-global-3 { color: var(--global-text-3); }
-  .text-global-4 { color: var(--global-text-4); }
+  .text-global-1 {
+    color: var(--global-text-1);
+  }
+  .text-global-2 {
+    color: var(--global-text-2);
+  }
+  .text-global-3 {
+    color: var(--global-text-3);
+  }
+  .text-global-4 {
+    color: var(--global-text-4);
+  }
 
   /* Header */
-  .bg-header-1 { background-color: var(--header-bg-1); }
-  .bg-header-2 { background-color: var(--header-bg-2); }
+  .bg-header-1 {
+    background-color: var(--header-bg-1);
+  }
+  .bg-header-2 {
+    background-color: var(--header-bg-2);
+  }
 
   /* Footer */
-  .bg-footer-1 { background-color: var(--footer-bg-1); }
+  .bg-footer-1 {
+    background-color: var(--footer-bg-1);
+  }
 
   /* SearchView */
-  .text-searchview-1 { color: var(--searchview-text-1); }
+  .text-searchview-1 {
+    color: var(--searchview-text-1);
+  }
 }
 
 /* ============================= */

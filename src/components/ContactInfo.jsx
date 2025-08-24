@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ContactInfo = () => {
   return (
@@ -13,7 +13,10 @@ const ContactInfo = () => {
 
         <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Email</h3>
         <p className="text-sm sm:text-base">
-          <a href="mailto:info@digitaldataconsultancy.com" className="underline hover:text-blue-600 transition">
+          <a
+            href="mailto:info@digitaldataconsultancy.com"
+            className="underline hover:text-blue-600 transition"
+          >
             info@digitaldataconsultancy.com
           </a>
         </p>
@@ -22,8 +25,10 @@ const ContactInfo = () => {
       <div>
         <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Registered Address</h3>
         <address className="not-italic text-sm sm:text-base">
-          Digital Data Consultancy Limited<br />
-          20-22 Wenlock Road,<br />
+          Digital Data Consultancy Limited
+          <br />
+          20-22 Wenlock Road,
+          <br />
           London, N1 7GU
         </address>
       </div>

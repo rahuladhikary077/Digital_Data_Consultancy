@@ -1,17 +1,12 @@
-import React from 'react'; // Fixed import statement
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowRight as ArrowRightIcon } from 'lucide-react';
 
-const ArrowRightIcon = () => (
-  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-  </svg>
-);
-
-const Herobanner = () => {
+const HeroBanner = () => {
+  console.log("HeroBanner rendered"); // Debug log
   return (
     <section className="relative bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 overflow-hidden">
-      {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/images/img_banner_gradients.png')",
@@ -20,7 +15,6 @@ const Herobanner = () => {
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
-      {/* Content */}
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 lg:py-40">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
@@ -31,8 +25,8 @@ const Herobanner = () => {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-            Digital Data Consultancy helps businesses unlock the power of their data 
-            through expert analysis, strategic insights, and innovative solutions.
+            Digital Data Consultancy helps businesses unlock the power of their data through expert
+            analysis, strategic insights, and innovative solutions.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -79,4 +73,4 @@ const Herobanner = () => {
   );
 };
 
-export default Herobanner;
+export default HeroBanner;

@@ -26,7 +26,9 @@ export default function ServiceCards() {
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
           Combining Data into Business Success
         </h2>
-        <p className="text-center text-gray-600 mb-12">We offer a range of services to help you achieve your data-driven goals.</p>
+        <p className="text-center text-gray-600 mb-12">
+          We offer a range of services to help you achieve your data-driven goals.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => (
             <div

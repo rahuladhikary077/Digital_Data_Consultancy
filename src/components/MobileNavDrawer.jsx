@@ -30,19 +30,24 @@ const MobileNavDrawer = ({ menuItems, isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 bg-black bg-opacity-75 md:hidden" onClick={onClose}>
-      <div 
+      <div
         className="fixed inset-y-0 right-0 w-full max-w-sm bg-[#02101F] text-white p-6 transform transition-transform duration-300 ease-out"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-semibold">Menu</h2>
-          <button 
-            onClick={onClose} 
+          <button
+            onClick={onClose}
             className="text-white hover:text-gray-300 p-2 rounded-md"
             aria-label="Close menu"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
@@ -65,7 +70,12 @@ const MobileNavDrawer = ({ menuItems, isOpen, onClose }) => {
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
                       </svg>
                     </button>
                     {openSubmenu === item.id && (
@@ -85,8 +95,8 @@ const MobileNavDrawer = ({ menuItems, isOpen, onClose }) => {
                     )}
                   </div>
                 ) : (
-                  <Link 
-                    to={item.to} 
+                  <Link
+                    to={item.to}
                     className="block py-4 text-white hover:text-gray-300 transition-colors duration-200"
                     onClick={onClose}
                   >

@@ -1,7 +1,7 @@
-import React from "react";
-import ContactForm from "../components/ContactForm";
-import ContactInfo from "../components/ContactInfo";
-import MapSection from "../components/MapSection";
+import React from 'react';
+import ContactForm from '../components/ContactForm';
+import ContactInfo from '../components/ContactInfo';
+import MapSection from '../components/MapSection';
 
 const ContactPage = () => {
   return (
